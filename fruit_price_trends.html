@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <div id='vegas-79296e4e-630e-4480-9796-97d0aebcc9a7'></div>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "mark" : "line",
+  "encoding" : {
+    "x" : {
+      "field" : "Date",
+      "type" : "ordinal"
+    },
+    "y" : {
+      "field" : "Price",
+      "type" : "quantitative"
+    },
+    "color" : {
+      "field" : "Fruit",
+      "type" : "nominal"
+    }
+  },
+  "description" : "Fruit Prices Over Time",
+  "data" : {
+    "values" : [
+      {
+        "Date" : "2026-10-01",
+        "Fruit" : "Apple",
+        "Price" : 120.0
+      },
+      {
+        "Date" : "2026-10-02",
+        "Fruit" : "Banana",
+        "Price" : 60.0
+      },
+      {
+        "Date" : "2026-10-03",
+        "Fruit" : "Apple",
+        "Price" : 125.0
+      },
+      {
+        "Date" : "2026-10-04",
+        "Fruit" : "Orange",
+        "Price" : 80.0
+      },
+      {
+        "Date" : "2026-10-05",
+        "Fruit" : "Apple",
+        "Price" : 130.0
+      },
+      {
+        "Date" : "2026-10-06",
+        "Fruit" : "Banana",
+        "Price" : 62.0
+      },
+      {
+        "Date" : "2026-10-07",
+        "Fruit" : "Orange",
+        "Price" : 82.0
+      }
+    ]
+  }
+}
+   }
+   vg.embed("#vegas-79296e4e-630e-4480-9796-97d0aebcc9a7", embedSpec, function(error, result) {});
+ </script>
+
+    </body>
+</html>

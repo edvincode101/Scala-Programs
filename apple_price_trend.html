@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <div id='vegas-e9903298-8319-45d3-8ae8-8cdbe7491938'></div>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "mark" : "line",
+  "encoding" : {
+    "x" : {
+      "field" : "Date",
+      "type" : "ordinal"
+    },
+    "y" : {
+      "field" : "Price",
+      "type" : "quantitative"
+    }
+  },
+  "description" : "Apple Price Trend",
+  "data" : {
+    "values" : [
+      {
+        "Date" : "2026-10-01",
+        "Price" : 120.0
+      },
+      {
+        "Date" : "2026-10-02",
+        "Price" : 125.0
+      },
+      {
+        "Date" : "2026-10-04",
+        "Price" : 130.0
+      },
+      {
+        "Date" : "2026-10-06",
+        "Price" : 128.0
+      }
+    ]
+  }
+}
+   }
+   vg.embed("#vegas-e9903298-8319-45d3-8ae8-8cdbe7491938", embedSpec, function(error, result) {});
+ </script>
+
+    </body>
+</html>
